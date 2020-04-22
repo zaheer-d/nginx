@@ -9,8 +9,8 @@ services:
     # entrypoint: /bin/sh
     volumes:
       - ./src/:/usr/src
-      - ./nginx/ssl:/etc/nginx/ssl
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./configs/ssl:/etc/nginx/ssl
+      - ./configs/nginx.conf:/etc/nginx/nginx.conf
 
     ports:
       - 80:80

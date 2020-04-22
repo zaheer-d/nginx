@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  my-webserver:
+    image: udemy-nginx:latest
+    container_name: 'nginx-ws'
+    # stdin_open: true
+    # tty: true
+    # entrypoint: /bin/sh
+    volumes:
+      - ./src/:/usr/src
+      - ./nginx/ssl:/etc/nginx/ssl
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+
+    ports:
+      - 80:80
+      - 443:443

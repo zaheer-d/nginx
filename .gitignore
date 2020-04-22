@@ -1,2 +1,4 @@
 
 .DS_Store
+configs/ssl/self.crt
+configs/ssl/self.key
